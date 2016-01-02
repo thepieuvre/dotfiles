@@ -1,22 +1,26 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-cd "$(dirname "${BASH_SOURCE}")";
+###
+# Create/overwride ~/.dotfiles symlink to the current directory
+# Overwride .bash_profile (which will load every other dotfile)
+###
+DOT_FILES_DIR=".dotfiles"
 
-git pull origin master;
-
+cd "$(dirname "$0")"
+git pull
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
-	source ~/.bash_profile;
+				--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
 }
-
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
-	doIt;
+		doIt
 else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
-	echo "";
+	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
+	echo
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
-		doIt;
-	fi;
-fi;
-unset doIt;
+		doIt
+	fi
+fi
+unset doIt
+unset DOT_FILES_DIR
+source ~/.bash_profile
