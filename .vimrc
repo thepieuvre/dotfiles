@@ -1,7 +1,70 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Keep Plugin commands between vundle#begin/end.
+Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/nerdtree'
+Plugin 'inside/vim-search-pulse'
+Plugin 'inside/vim-grep-operator'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'CursorLineCurrentWindow'
+Plugin 'matze/vim-move'
+
+" dev tools
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'mattn/emmet-vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'Toggle'
+"Plugin 'marijnh/tern_for_vim'
+Plugin 'fatih/vim-go'
+
+" Color Shemes
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'github-theme'
+
+" Syntax
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'elzr/vim-json'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'php.vim-for-php5'
+Plugin 'vim-scripts/Sass'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'beyondwords/vim-twig'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
 " Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
-let g:solarized_termtrans=1
+colorscheme monokai
 
 " Make Vim more useful
 set nocompatible
