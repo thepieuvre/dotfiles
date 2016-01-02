@@ -22,6 +22,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'CursorLineCurrentWindow'
 Plugin 'matze/vim-move'
+Plugin 'majutsushi/tagbar'
 
 " dev tools
 Plugin 'editorconfig/editorconfig-vim'
@@ -167,3 +168,7 @@ if has("autocmd")
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+" F8 key will toggle the Tagbar window
+nmap <F8> :TagbarToggle<CR>
+
