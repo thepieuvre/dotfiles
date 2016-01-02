@@ -48,6 +48,9 @@ Plugin 'php.vim-for-php5'
 Plugin 'vim-scripts/Sass'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'beyondwords/vim-twig'
+Plugin 'tfnico/vim-gradle'
+Plugin 'rdolgushin/groovy.vim'
+Plugin 'NathanNeff/grails-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
