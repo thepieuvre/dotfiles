@@ -99,6 +99,7 @@
 	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
+	editor = /usr/bin/vim
 
 [color]
 
@@ -174,3 +175,6 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+	name = Alexandre di Costanzo
+	email = alex@thepieuvre.com
