@@ -23,7 +23,6 @@ Plugin 'godlygeek/tabular'
 Plugin 'CursorLineCurrentWindow'
 Plugin 'matze/vim-move'
 Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdtree'
 
 " dev tools
 Plugin 'editorconfig/editorconfig-vim'
