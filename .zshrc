@@ -40,16 +40,12 @@ ZSH_THEME="crunch"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew gradle grails osx web-search redis-cli sublime terminalapp thefuck atom heroku github)
+plugins=(autojump git brew gradle grails osx web-search redis-cli sublime terminalapp thefuck atom heroku github)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:/Users/adc/Applications/vert.x/bin:/Users/adc/Applications/grails/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:/usr/local/sbin
-
-# My configuration
-
-. `brew --prefix`/etc/profile.d/z.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 [[ -s "/Users/adc/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/adc/.sdkman/bin/sdkman-init.sh"

@@ -51,6 +51,7 @@ Plugin 'beyondwords/vim-twig'
 Plugin 'tfnico/vim-gradle'
 Plugin 'rdolgushin/groovy.vim'
 Plugin 'NathanNeff/grails-vim'
+Plugin 'sukima/asciidoc-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -175,3 +176,5 @@ endif
 " F8 key will toggle the Tagbar window
 nmap <F8> :TagbarToggle<CR>
 
+" *.adoc are ASCIIDOC files
+au BufNewFile,BufRead *.adoc set syntax=asciidoc
