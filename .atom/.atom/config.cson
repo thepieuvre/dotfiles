@@ -1,0 +1,20 @@
+"*":
+  core:
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  editor:
+    invisibles:
+      {}
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "ef833146-db65-2aa2-c3cd-fe569d57d372"
+  metrics:
+    userId: "5541915fa2cb9b69db06a1fe515cbecaeb0c3ccd"
+  "one-light-ui":
+    {}
+  "spell-check":
+    {}
+  welcome:
+    showOnStartup: false

@@ -8,7 +8,7 @@ DOT_FILES_DIR=".dotfiles"
 cd "$(dirname "$0")"
 git pull
 
-FILE4SYNC=(".vim" ".vimrc" ".zshrc" "bin" "init" ".gitattributes" ".gitconfig")
+FILE4SYNC=(".atom" ".vim" ".vimrc" ".zshrc" "bin" "init" ".gitattributes" ".gitconfig")
 
 for file in ${FILE4SYNC[*]}
 do
