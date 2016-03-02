@@ -49,3 +49,5 @@ export PATH=$PATH:/Users/adc/Applications/vert.x/bin:/Users/adc/Applications/gra
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 [[ -s "/Users/adc/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/adc/.sdkman/bin/sdkman-init.sh"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
